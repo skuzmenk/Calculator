@@ -1,0 +1,53 @@
+﻿<Window x:Class="Calculator.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Calculator"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="500">
+    <Grid x:Name="MainRoot" Background="#FFFDFB94">
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="0"/>
+        </Grid.ColumnDefinitions>
+        <TextBlock Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="5" x:Name="Output" HorizontalAlignment="Right" VerticalAlignment="Center" FontSize="25" Panel.ZIndex="0"/>
+        <Button Grid.Row="1" Grid.Column="0" FontSize="25" Background="#FFC6E98B">CE</Button>
+        <Button Grid.Row="1" Grid.Column="1" FontSize="25" Background="#FFC6E98B">C</Button>
+        <Button Grid.Row="1" Grid.Column="2" FontSize="25" Background="#FFC6E98B">▷</Button>
+        <Button Grid.Row="2" Grid.Column="0" FontSize="25" Background="#FFE7FFBE">7</Button>
+        <Button Grid.Row="2" Grid.Column="1" FontSize="25" Background="#FFE7FFBE">8</Button>
+        <Button Grid.Row="2" Grid.Column="2" FontSize="25" Background="#FFE7FFBE">9</Button>
+        <Button Grid.Row="3" Grid.Column="0" FontSize="25" Background="#FFE7FFBE">4</Button>
+        <Button Grid.Row="3" Grid.Column="1" FontSize="25" Background="#FFE7FFBE">5</Button>
+        <Button Grid.Row="3" Grid.Column="2" FontSize="25" Background="#FFE7FFBE">6</Button>
+        <Button Grid.Row="4" Grid.Column="0" FontSize="25" Background="#FFE7FFBE">1</Button>
+        <Button Grid.Row="4" Grid.Column="1" FontSize="25" Background="#FFE7FFBE">2</Button>
+        <Button Grid.Row="4" Grid.Column="2" FontSize="25" Background="#FFE7FFBE">3</Button>
+        <Button Grid.Row="1" Grid.Column="3" FontSize="25" Background="#FFC6E98B">/</Button>
+        <Button Grid.Row="2" Grid.Column="3" FontSize="25" Background="#FFC6E98B">*</Button>
+        <Button Grid.Row="3" Grid.Column="3" FontSize="25" Background="#FFC6E98B">-</Button>
+        <Button Grid.Row="4" Grid.Column="3" FontSize="25" Background="#FFC6E98B">+</Button>
+        <Button Grid.Row="5" Grid.Column="0" FontSize="25" Background="#FFE7FFBE">00</Button>
+        <Button Grid.Row="5" Grid.Column="1" FontSize="25" Background="#FFE7FFBE">0</Button>
+        <Button Grid.Row="5" Grid.Column="2" FontSize="25" Background="#FFE7FFBE">,</Button>
+        <Button Grid.Row="5" Grid.Column="3" FontSize="25" Background="#FFC6E98B">=</Button>
+        <Button Grid.Row="1" Grid.Column="4" FontSize="25"  Background="#FFC6E98B">Pi</Button>
+        <Button Grid.Row="2" Grid.Column="4" FontSize="25"  Background="#FFC6E98B">e</Button>
+        <Button Grid.Row="3" Grid.Column="4" FontSize="25"  Background="#FFC6E98B">√</Button>
+        <Button Grid.Row="4" Grid.Column="4" FontSize="25"  Background="#FFC6E98B">n²</Button>
+        <Button Grid.Row="5" Grid.Column="4" FontSize="25"  Background="#FFC6E98B">ln</Button>
+        <Button x:Name="Menu" Content="≡" HorizontalAlignment="Left" VerticalAlignment="Top" Width="34" Click="Menu_Click" Background="#FF38C804"/>
+    </Grid>
+</Window>
